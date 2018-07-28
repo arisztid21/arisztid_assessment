@@ -1,24 +1,10 @@
-import React, {Component} from 'react';
+import React from 'react';
 
 
-class Button extends Component{
-    constructor(){
-        super();
-        this.state={
-            people: {}
-        }
-    }
-    componentDidMount(){
-
-    }
-   
-    render(){
-        return(
-            <div>
-               
-            </div>
-        )
-    }
+const Button = (props) => {
+    return(
+        <button onClick={props.getMyUsers}>Click Me!</button>
+    )
 }
 
 export default Button;
